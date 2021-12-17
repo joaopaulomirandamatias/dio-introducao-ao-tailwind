@@ -6,5 +6,10 @@ Tailwind CSS é um framework desenvolvido para maximizar o potencial do bom e ve
 ![Framework Tailwind CSS](https://laravelnews.imgix.net/images/tailwindcss-1633184775.jpg?ixlib=php-3.3.1)
 
 
+#### ARTIGOS
+[Conhecendo a abordagem Utility First com Tailwind CSS](https://web.dio.me/articles/conhecendo-a-abordagem-utility-first-com-tailwind-css?back=%2Farticles&page=1&order=oldest)
+[O que é mobile first](https://web.dio.me/articles/o-que-e-mobile-first?back=%2Farticles&page=1&order=oldest)
+
+
 Digital Inovation One!
 [Curso de Introdução ao Tailwind CSS](https://web.dio.me/)
