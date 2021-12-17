@@ -38,7 +38,14 @@ Para teste pode utilizar o [Play CDN](https://play.tailwindcss.com/) o playgroun
 
 A maneira mais simples e rápida de começar a usar o Tailwind CSS do zero é com a ferramenta Tailwind CLI.
 
-### Instale Tailwind CSS
+Mas antes temos que iniciar um projeto usando o nodejs. O comando `$ npm init` nos permite iniciar um pacote, criando o arquivo `package.json` de acordo com certas respostas que damos às perguntas feitas.
+
+Mas você pode pular as perguntas, fazendo com que o arquivo `package.json` seja criado imediatamente. Basta adicionar `-y` ao comando: `$ npm init -y`.
+
+```
+npm init -y
+```
+
 Instale __tailwindcss__ via npm e crie seu tailwind __config.js__ arquivo.
 
 ```
@@ -94,76 +101,3 @@ Adicione seu arquivo CSS compilado ao `<head>` e comece a usar as classes de uti
 </html>
 ```
 
-3. Instalação do Tailwind CSS utilizando o PostCSS
-
-Instalar o Tailwind CSS como um plugin PostCSS é a maneira mais perfeita de integrá-lo com ferramentas de compilação como webpack, Rollup, Vite e Parcel.
-
-### Instale Tailwind CSS
-Instale __tailwindcss__ e suas dependências de pares via npm e crie seu arquivo __tailwind.config.js__
-
-```	
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init
-```	
-Para começar a usar o Tailwind CSS v3.0 ou a versão mais recente: 
-```	
-npm install -D tailwindcss@latest postcss autoprefixer
-npx tailwindcss init
-```
-### Adicione o Tailwind à sua configuração PostCSS
-Adicione __tailwindcss__ e autoprefixerao seu arquivo __postcss.config.js__
-
-```	
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  }
-}
-```
-### Configure seus caminhos de modelo
-Adicione os caminhos para todos os seus arquivos de modelo em seu __tailwind.config.js__ arquivo.
-
-```	
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-### Adicione as diretivas do Tailwind ao seu CSS
-Adicione as __@tailwind__ diretivas para cada uma das camadas do Tailwind ao seu arquivo CSS principal.
-
-```	
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-### Comece seu processo de construção
-Execute seu processo de construção com `npm run dev` ou qualquer comando configurado em seu __package.json__ arquivo.
-
-```	
-npm run dev
-```	
-
-### Comece a usar o Tailwind em seu HTML
-Certifique-se de que seu CSS compilado esteja incluído no `<head>` (sua estrutura pode lidar com isso para você) e , em seguida, comece a usar as classes de utilitário do Tailwind para estilizar seu conteúdo.
-
-```	
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/main.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-</html
-```
