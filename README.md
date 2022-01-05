@@ -12,5 +12,10 @@ Tailwind CSS é um framework desenvolvido para maximizar o potencial do bom e ve
 [O que é mobile first](https://web.dio.me/articles/o-que-e-mobile-first?back=%2Farticles&page=1&order=oldest)
 
 
+#### PORTIFÓLIO COMPLETO COM NEXTJS E TAILWIND CSS
+[Portifólio TI Contigo](https://github.com/joaopaulomirandamatias/portifolio-ticontigo)
+
+
+
 Digital Inovation One!
 [Curso de Introdução ao Tailwind CSS](https://web.dio.me/)
